@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6e6;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: #d63384;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+        .yes-button {
+            background-color: #28a745;
+            color: white;
+        }
+        .no-button {
+            background-color: #dc3545;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHpwaG5xZzZ4eXp6ZzZ4eXp6ZzZ4eXp6ZzZ4eXp6ZzZ4JnB0PWV2ZW50X2xvZyZjdD1n/KztT2c4u8mYYUiMKdJ/giphy.gif" alt="Cute GIF" style="width: 200px;">
+        
+        <h1>Will you be my Valentine?</h1>
+
+        <div class="buttons">
+            <button class="yes-button" onclick="handleYesClick()">Yes</button>
+            <button class="no-button" onclick="handleNoClick()">No</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

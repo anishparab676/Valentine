@@ -1,37 +1,38 @@
 let messageIndex = 0;
+
 const messages = [
-  "Are you sure?",
-  "Really sure?",
-  "Think again!",
-  "Last chance!",
-  "Surely not?",
-  "You might regret this!",
-  "Give it another thought!",
-  "Are you absolutely sure?",
-  "This could be a mistake!",
-  "Have a heart!",
-  "Don't be so cold!",
-  "Change of heart?",
-  "Wouldn't you reconsider?",
-  "Is that your final answer?",
-  "You're breaking my heart ;("
+    "Ae jii o jii, listen to me! 💃",
+    "Ae bapu ji, ye dekhiye kya keh rahi hai! 👴",
+    "Duniya hila dunga, par 'No' mat bolo! 🌎",
+    "Nonsense! Ek dum nonsense! ☝️",
+    "Hey Maa, Mataji! Itni badi na? 🙏",
+    "Babita ji kya sochegi? 😭",
+    "Chup ho ja satvi fail! 🚫",
+    "Cancel! Cancel! Cancel! 🌂",
+    "Nahane jaa nahaane jaa... dimaag thanda kar! 🚿",
+    "Goli beta, masti nahi! 🙅‍♂️",
+    "Hamari sanskriti mein 'No' nahi kehte! 🇮🇳",
+    "Party-sharty karni hai ki nahi? 🍺",
+    "Arey beta, ye toh 'Ooltah Chashmah' ho gaya! 👓",
+    "Think again, varna Tapu sena ko bulaunga! 👦",
+    "Please maan jao, varna Jethalal ka 'Gada Electronics' band ho jayega! 📺"
 ];
 
 function handleNoClick() {
-  const noButton = document.querySelector('.no-button');
-  const yesButton = document.querySelector('.yes-button');
+    const noButton = document.querySelector('.no-button');
+    const yesButton = document.querySelector('.yes-button');
 
-  // Update the text of the No button
-  noButton.textContent = messages[messageIndex];
+    // Changes the text of the No button to the TMKOC lines
+    noButton.textContent = messages[messageIndex];
 
-  // Increment index and loop back to 0 if at the end
-  messageIndex = (messageIndex + 1) % messages.length;
+    // Moves to the next message
+    messageIndex = (messageIndex + 1) % messages.length;
 
-  // Make the Yes button grow
-  const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
-  yesButton.style.fontSize = `${currentSize * 1.5}px`;
+    // Makes the Yes button bigger
+    const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
+    yesButton.style.fontSize = `${currentSize * 1.5}px`;
 }
 
 function handleYesClick() {
-  window.location.href = "yes_page.html";
+    window.location.href = "yes_page.html";
 }
